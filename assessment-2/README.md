@@ -36,7 +36,7 @@ python create_numpy_array.py
 
 # Results
 
-All files created when running the scripts above can be accessed [here](https://github.com/claudioscheer/test-dl-position/releases/tag/assignment-2).
+The model trained, the `test.preds.csv` file, the zip file with roteated images and the NumPy array can be accessed [here](https://github.com/claudioscheer/test-dl-position/releases/tag/assignment-2).
 
 # Approach
 
