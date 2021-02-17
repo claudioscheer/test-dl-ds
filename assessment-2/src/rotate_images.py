@@ -3,6 +3,7 @@ import os
 from dataset_loader import load_image
 import numpy as np
 import cv2
+from shutil import copyfile
 
 save_dir = os.path.join(os.getcwd(), "saved_models")
 model_name = "keras_cifar10_trained_model.h5"
@@ -41,3 +42,5 @@ for image_file in os.listdir(test_dataset):
     rotation_angle = get_rotation_angle(result)
     if rotation_angle:
         rotate_image(image_path, image_rotated_path, rotation_angle)
+    else:
+        copyfile(image_path, image_rotated_path)

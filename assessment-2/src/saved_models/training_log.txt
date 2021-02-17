@@ -1,6 +1,0 @@
-Epoch 100/100
-39/39 [==============================] - 3s 67ms/step - loss: 0.0421 - accuracy: 0.9893 - val_loss: 0.2922 - val_accuracy: 0.9177
-Saved trained model at /media/water/files/Projects/test-dl-position/assessment-2/src/saved_models/keras_cifar10_trained_model.h5
-1376/1376 [==============================] - 4s 3ms/step - loss: 0.2922 - accuracy: 0.9177
-Test loss: 0.29223909974098206
-Test accuracy: 0.9177403450012207
