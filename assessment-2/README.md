@@ -1,6 +1,6 @@
 # How to run
 
-All source code files are inside `src` folder. The `train` and `test` datasets must be extract to the `dataset` folder.
+The train and test datasets must be extract to the `dataset` folder. All source code files are inside `src` folder; make sure you are inside this folder when running the scripts.
 
 ## `cifar10_cnn.py`
 
@@ -37,3 +37,19 @@ python create_numpy_array.py
 # Results
 
 All files created when running the scripts above can be accessed [here](https://github.com/claudioscheer/test-dl-position/releases/tag/assignment-2).
+
+# Approach
+
+First, I had to understand a little bit about how TensorFlow works. I was used to PyTorch. Then, I focused on understanding the dataset and how it was structured. I used OpenCV to load the images and NumPy to load the ground truth CSV. I splitted the train dataset into train and validation. The validation dataset gives a better idea of the model performance on the test dataset. I used 10% of the train dataset to validate the model.
+
+Since the model was already defined, I just adjusted the script to my needs. To have a faster training process, I increased the batch size and checked if the model was running on GPU. PyTorch requires calling `model.cuda()`. It looks like you do not need that on TensorFlow 2.
+
+Finally, I focused on loading the model and transforming the images, according to the requirements, using OpenCV library.
+
+# Next steps for improvements
+
+- Data augmentation (black and white images, flipped images, etc);
+- Instead of 32x32, use images of 64x64 as input;
+- Add more convolutional layers to the topology, taking care of overfitting and underfitting problems;
+- Test other optimizers, such as Adam;
+- Increase the learning rate;
