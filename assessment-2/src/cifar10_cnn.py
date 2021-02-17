@@ -10,9 +10,9 @@ from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
 import os
 
-batch_size = 64
+batch_size = 128
 num_classes = 5
-epochs = 20
+epochs = 100
 save_dir = os.path.join(os.getcwd(), "saved_models")
 model_name = "keras_cifar10_trained_model.h5"
 
