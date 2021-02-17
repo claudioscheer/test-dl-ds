@@ -46,10 +46,11 @@ Since the model was already defined, I just adjusted the script to my needs. To 
 
 Finally, I focused on loading the model and transforming the images, according to the requirements, using OpenCV library.
 
-# Next steps for improvements
+# Next steps
 
 - Data augmentation (black and white images, flipped images, etc);
 - Instead of 32x32, use images of 64x64 as input;
 - Add more convolutional layers to the topology, taking care of overfitting and underfitting problems;
 - Test other optimizers, such as Adam;
 - Increase the learning rate;
+- Explore parallelism to process the images;

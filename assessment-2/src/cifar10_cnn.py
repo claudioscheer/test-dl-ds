@@ -11,7 +11,7 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D
 import os
 
 batch_size = 128
-num_classes = 5
+num_classes = 4
 epochs = 100
 save_dir = os.path.join(os.getcwd(), "saved_models")
 model_name = "keras_cifar10_trained_model.h5"

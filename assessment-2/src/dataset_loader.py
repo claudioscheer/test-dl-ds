@@ -5,9 +5,8 @@ import cv2
 target_dict = {
     "rotated_left": 0,
     "rotated_right": 1,
-    "upside": 2,
-    "upside_down": 3,
-    "upright": 4,
+    "upside_down": 2,
+    "upright": 3,
 }
 target_dict_class = {target_dict[x]: x for x in target_dict}
 
@@ -37,7 +36,7 @@ def load_dataset(image_folder, train_ids, validation_split):
         image_path = os.path.join(image_folder, image_file)
         image = load_image(image_path)
         img_data_array.append(image)
-        class_name.append(transform_class(train_ids[image_file]))
+        class_name.append(transform_class(train_ids[image_file], True))
 
     validation_index = int(len(class_name) * validation_split)
     return (

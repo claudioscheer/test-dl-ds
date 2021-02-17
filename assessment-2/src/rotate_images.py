@@ -22,7 +22,7 @@ def get_rotation_angle(c):
         return cv2.cv2.ROTATE_90_CLOCKWISE
     elif c == 1:
         return cv2.cv2.ROTATE_90_COUNTERCLOCKWISE
-    elif c == 3:
+    elif c == 2:
         return cv2.cv2.ROTATE_180
     return None
 
