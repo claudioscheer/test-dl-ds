@@ -28,8 +28,12 @@ python rotate_images.py
 
 ## `create_numpy_array.py`
 
-This script creates a NumPy array with all images inside `dataset/test-rotated`.
+This script creates a NumPy array with all images inside `dataset/test-rotated`. The array is saved to `src/all-images.npy`.
 
 ```bash
 python create_numpy_array.py
 ```
+
+# Results
+
+All files created when running the scripts above can be accessed [here](https://github.com/claudioscheer/test-dl-position/releases/tag/assignment-2).
